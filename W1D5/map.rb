@@ -1,4 +1,3 @@
-
 class Map
   attr_reader :map_arr
 
