@@ -16,4 +16,5 @@ class Queue
   def peek
     @stack.first
   end
+  
 end
