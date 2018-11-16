@@ -1,0 +1,30 @@
+<div class="new_album">
+  <form action="<%= action_url %>" method="post">
+    <input type="hidden" name="_method" value="<%= method %>">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label>
+      Title:
+      <input type="text" name="albums[title]">
+    </label>
+    <br>
+    <label>
+      Band:
+
+        <select>
+          <% @bands.each do |band| %>
+          <option value="">  <%= band.name %>  </option>
+          <% end %>
+        </select>
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="album[live]" value="live"> <label for="live_album"> Live </label>
+      <input type="radio" name="album[live]" value="studio"> <label for="studio_album"> Studio </label>
+    </label>
+  <br>
+    <label>
+      Year:
+      <input type="text" name="album[year]" value="">
+    </label>
+  </form>
+</div>

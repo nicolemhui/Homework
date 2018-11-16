@@ -1,0 +1,24 @@
+
+<form action='<%= action_url %>' method="post">
+  <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+
+<label>
+  Email:
+  <input type="text" id="email" name="user[email]">
+</label>
+<br>
+<label>
+  Password:
+  <input type="password" id="password" name="user[password]">
+</label>
+
+<br>
+<input type="submit" name="" value="<%= submit_type %>">
+
+<% if flash.now[:errors] %>
+   <% flash.now[:errors].each do |error| %>
+     <%= error %>
+   <% end %>
+ <% end %>
+
+</form>

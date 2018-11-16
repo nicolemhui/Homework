@@ -1,0 +1,18 @@
+<p> This is the home page for ALL bands </p>
+<br>
+<h4> Links </h4>
+<a href="<%= new_band_url %>"> New Band </a>
+<br>
+<br>
+<% @bands.each do |band| %>
+
+<div class="band_container">
+  <div class="band_pics">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Backstreetboysbsb_lp01.jpg/220px-Backstreetboysbsb_lp01.jpg" alt="">
+    <br>
+    <a href="<%= band_url(band) %>"> <%= band.name %> </a>  <!-- This should take us to a single band's page-->
+  </div>
+</div>
+
+
+<% end %>

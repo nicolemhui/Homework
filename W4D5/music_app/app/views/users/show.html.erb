@@ -1,0 +1,13 @@
+<h3> Welcome to Music App </h3>
+<br>
+
+<a href="<%=bands_url%>"> Check out the bands </a>
+
+<p> THIS IS THE INDIVIDUAL USER'S PAGE! </p>
+<br>
+
+<form action="<%= session_url %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Logout">
+</form>

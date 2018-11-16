@@ -1,0 +1,74 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+   background-color: #C0C0C0;
+   background-image: url("https://images.pexels.com/photos/374703/pexels-photo-374703.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ h1 {
+   font-family: 'Advent Pro', sans-serif;
+   font-size: 100px;
+   text-align: center;
+ }
+
+ a {
+   background-color: rgba(150, 200, 200, 0.7);
+   padding: 5px;
+   font-size: 30px;
+   color: white;
+   font-family: 'Marker Felt';
+   border-radius: 6px;
+   display: inline-block;
+   text-decoration: none;
+ }
+
+ h3 {
+   text-align: center;
+ }
+
+ label {
+   color: #B4886B;
+   font-weight: bold;
+   display: block;
+   width: 150px;
+ }
+
+ .log_in_sign_in {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-content: space-between;
+ }
+ .band_container {
+
+ }
+
+ .band_pics img {
+   display: inline-block;
+   /* margin-left: auto;
+   margin-right: auto;
+   height: 7px;  */
+ }
+
+ .albums {
+   /* display: flex; */
+   /* justify-content: center; */
+ }

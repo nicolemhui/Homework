@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Music App</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <h1>MUSIC APP</h1>
+    <div class="log_in_sign_in">
+      <a href="<%= new_session_url %>"> Log-In </a>
+      <a href="<%= new_user_url %>"> Sign-Up </a>
+    </div>
+    <br>
+    <%= yield %>
+  </body>
+</html>
