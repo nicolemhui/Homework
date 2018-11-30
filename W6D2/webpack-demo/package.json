@@ -1,0 +1,20 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack -w --mode=development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "webpack": "^4.26.1",
+    "jshint": "^2.9.6"
+  }
+}
